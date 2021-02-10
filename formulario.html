@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>formulario</title>
+    </head>
+    <body>        
+        <form action="ejemplo.php" method="get">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>Nombre: <input type="text" name="nombre" size="30" placeholder="Escriba nombre y apellidos"></p>
+            <p>Edad: <input type="number" name="edad"></p>
+            <p>Contraseña: <input type="password" name="contrasena"  ></p>   
+            <p>Sexo:
+                <input type="radio" name="hm" value="h"> Hombre
+                <input type="radio" name="hm" value="m"> Mujer
+            </p>
+            <label>Pais: </label><br>
+            <input list="contry" placeholder="Escribe tu pais">
+            <datalist id="contry">
+            <option value="Argentina">
+            <option value="Bolivia">
+            <option value="Brazil">
+            <option value="Chile">
+            <option value="M&eacute;xico">
+            <option value="Ecuador">
+            <option value="Guyana">
+            </datalist>
+        </fieldset>        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+        </form>        
+    </body>
+</html>
+
+
+
+
+
